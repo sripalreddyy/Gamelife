@@ -497,9 +497,9 @@
     </profiles>
     <distributionManagement>
     <repository>
-        <id>Releases</id>
+        <id>balureleases</id>
         <name>Balureleases</name>
-        <url>http://192.168.1.7:8081/nexus/content/repositories/Releases/</url>
+        <url>http://192.168.1.7:8081/nexus/content/repositories/balureleases/</url>
     </repository>
     </distributionManagement>
 </project>
