@@ -496,6 +496,7 @@
         </profile>
     </profiles>
     <distributionManagement>
+    <repositories>
     <repository>
         <id>Releases</id>
         <name>Balureleases</name>
@@ -506,5 +507,6 @@
         <name>Snapshots</name>
         <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
     </repository>
+    </repositories>
     </distributionManagement>
 </project>
