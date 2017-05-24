@@ -503,11 +503,11 @@
         <url>http://192.168.1.7:8081/nexus/content/repositories/Releases/</url>
     </repository>
         
-    <snapshotrepository>
+    <repository>
         <id>snapshots</id>
         <name>Snapshots</name>
         <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
-    </snapshotrepository>
+    </repository>
         
     </distributionManagement>
 </project>
