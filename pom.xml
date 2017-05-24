@@ -501,13 +501,10 @@
         <name>Balureleases</name>
         <url>http://192.168.1.7:8081/nexus/content/repositories/Releases/</url>
     </repository>
-</distributionManagement> 
-
-<repositories>
-    <repository>
+    <snapshotrepository>
         <id>snapshots</id>
         <name>Snapshots</name>
         <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
-    </repository>
-</repositories>
+    </snapshotrepository>
+    </distributionManagement>
 </project>
