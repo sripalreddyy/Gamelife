@@ -418,6 +418,21 @@
                         </dependencies>
                     </plugin>
                 </plugins>
+                <distributionManagement>
+                <repository>
+                <id>balureleases</id>
+                <name>Balureleases</name>
+                <url>http://192.168.1.7:8081/nexus/content/repositories/balureleases/</url>
+                </repository>
+                </distributionManagement> 
+
+                <repositories>
+                <repository>
+                <id>snapshots</id>
+                 <name>Snapshots</name>
+                 <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
+                </repository>
+                </repositories>
             </build>
             <reporting>
                 <plugins>
@@ -495,19 +510,4 @@
             </reporting>
         </profile>
     </profiles>
-    <distributionManagement>
-    <repository>
-        <id>balureleases</id>
-        <name>Balureleases</name>
-        <url>http://192.168.1.7:8081/nexus/content/repositories/balureleases/</url>
-    </repository>
-</distributionManagement> 
-
-<repositories>
-    <repository>
-        <id>snapshots</id>
-        <name>Snapshots</name>
-        <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
-    </repository>
-</repositories>
-</project>
+    </project>
