@@ -26,6 +26,21 @@
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
     </scm>
+    <distributionManagement>
+                <repository>
+                <id>balureleases</id>
+                <name>Balureleases</name>
+                <url>http://192.168.1.7:8081/nexus/content/repositories/balureleases/</url>
+                </repository>
+    </distributionManagement> 
+
+    <repositories>
+                <repository>
+                <id>snapshots</id>
+                 <name>Snapshots</name>
+                 <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
+                </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
@@ -418,22 +433,7 @@
                         </dependencies>
                     </plugin>
                 </plugins>
-                <distributionManagement>
-                <repository>
-                <id>balureleases</id>
-                <name>Balureleases</name>
-                <url>http://192.168.1.7:8081/nexus/content/repositories/balureleases/</url>
-                </repository>
-                </distributionManagement> 
-
-                <repositories>
-                <repository>
-                <id>snapshots</id>
-                 <name>Snapshots</name>
-                 <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
-                </repository>
-                </repositories>
-            </build>
+                </build>
             <reporting>
                 <plugins>
                     <plugin>
