@@ -41,6 +41,25 @@
                  <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots</url>
                 </repository>
     </repositories>
+    
+    <parent>
+    <groupId>org.sonatype.nexus.maven</groupId>
+    <artifactId>nexus-staging</artifactId>
+    <version>1.6.9-SNAPSHOT</version>
+  </parent>
+
+  <groupId>org.sonatype.plugins</groupId>
+  <artifactId>nexus-staging-maven-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
+
+  <!--
+  NOTE: Name and description is required here to configure proper details in the plugin.xml, there is no other mechanism to configure these.
+  -->
+  <name>Nexus Staging Maven Plugin</name>
+  <description>
+    Provides support to access staging functionality in a remote Nexus Professional server.
+  </description>
+
     <build>
         <plugins>
             <plugin>
@@ -219,6 +238,37 @@
             <version>1.9.0</version>
             <scope>test</scope>
         </dependency>
+        
+        
+    <dependency>
+      <groupId>org.sonatype.nexus</groupId>
+      <artifactId>nexus-client-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sonatype.nexus.plugins</groupId>
+      <artifactId>nexus-staging-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sonatype.spice.zapper</groupId>
+      <artifactId>spice-zapper</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sonatype.plexus</groupId>
+      <artifactId>plexus-cipher</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sonatype.plexus</groupId>
+      <artifactId>plexus-sec-dispatcher</artifactId>
+    </dependency>
+         <dependency>
+      <groupId>org.sonatype.nexus.maven</groupId>
+      <artifactId>nexus-common</artifactId>
+    </dependency>
+
     </dependencies>
 
     <modules>
